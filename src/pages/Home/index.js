@@ -11,7 +11,7 @@ function Home(){
      useEffect(() =>{
         //consumir API
 
-        fetch('https://api.themoviedb.org/3/movie/popular?api_key=<<API KEY>>&language=en-US&page=1') //ADD API KEY
+        fetch('https://api.themoviedb.org/3/movie/popular?api_key=bc64e802b8738bc9e0047d956612fa53&language=en-US&page=1') //ADD API KEY
         .then(response => response.json())
         .then(data => setMovies(data.results))
      })
